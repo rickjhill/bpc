@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+        
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row div {
+    /*
+    background-color: white;
+    height:100%;
+    border: solid red;
+    */
+}
+    
+[class*="col-"] {
+    float: left;
+    padding: 25px;
+}
+
+/* general page format */
+html {
+  background-color: #eee;
+}  
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height:1.25em;
+  background-color: #fff;
+  max-width:1000px;
+  width:100%;
+  border: solid #ddd;
+  border-width: 0px 2px 2px 0px;
+  margin: 0 auto;
+  
+  
+  
+}
+/*
+body.home { 
+    background-image: url('./images/hp_pickleplayers.jpg');
+    width:100%;
+    max-width:1200px;
+    max-height:150px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top; 
+    background-size: contain;
+}
+*/
+p.breadcrumbs {
+    font-style:italic;
+    font-weight:bold;
+    font-size: 80%;
+}
+    
+/* responsive menu */
+.topnav {
+  overflow: hidden;
+  background-color: #f4e842     /* menu bar color */
+}
+
+.topnav a, .topnav .navname {
+  float: left;
+  display: block;
+  color: #555;  /* #f2f2f2; */
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .navname {
+    color:black;
+    font-weight:bold;
+}    
+
+.topnav a:hover {
+  background-color: #f7f1a8;
+  color: black;
+}
+
+.active {
+  background-color: #e5d606;    /* #4CAF50;  */
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+/* titles on each page  */
+.page_title {
+    width:100%;
+    margin:10px;
+}  
+/* title on the home page  */
+.site_title { 
+    color:white; 
+    border: solid black;
+    border-width: 1px 0px;
+    height: 175px;
+     background-image: url('./images/hp_pickleplayers.jpg');
+    width:100%;
+    background-position: center top; 
+    background-repeat: no-repeat;
+    background-size: 100%, auto;    
+}  
+.site_title h2 {margin:20px;}
+
+.button {
+    background-color:  #660022 ;   /* #4CAF50; */
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 0.5em  1.5em;
+    text-align: center;
+    font-size: 115%;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #990033;
+    color: white;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}    
+/* mobile  screen */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media screen and (max-width: 630px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon { 
+    display: block;
+  }
+ .site_title {  
+    height: 130px;
+    background-size: cover; 
+ }  
+}
+
+@media screen and (max-width: 630px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100px;
+  }
+}
+/* grid  */
+
+
+/* For mobile phones first: */
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
